@@ -1,0 +1,11 @@
+
+.sections{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+@media screen and (width:500px) {
+    .sections{
+        display: block;
+    }
+}

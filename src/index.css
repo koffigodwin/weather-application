@@ -1,0 +1,281 @@
+body{
+    width: 100vw;
+    height: 100%;
+    background-image: url('../images/weather4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+}
+.dark-mood{
+    width: 100vw;
+    height: 100%;
+    background: url('../images/weather1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.btn-icon{
+    position: relative;
+    top: 1.2rem;
+    border-color: transparent;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.container{
+    position: relative;
+    top: 2rem;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.subcontainer{
+    position: relative;
+    top: 2rem;
+    width: 350px;  
+}
+.paragraph{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+input{
+    position: relative;
+    width: 20rem;
+    height: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fdfafa;
+    background: #bbb7b7;
+    border: none;
+    cursor: pointer;
+
+}
+.btn-submit{
+    position: relative;
+    width: 20rem;
+    height: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem; 
+    background: rgb(98, 98, 163);
+    color: #fff;
+}
+.or-container{
+    text-align: center;
+    margin: 5px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.btn-location{
+    position: relative;
+    width: 20rem;
+    height: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem; 
+    background: rgb(64, 125, 153);
+    color: #fff;
+}
+
+
+.weather-container{
+    position: relative;
+    top: 2rem;
+    background-color: transparent;
+    width: 800px;
+    margin-right: 20px;
+    color: #fff; 
+}
+.weather-container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.sub-weather{
+    display: flex;
+    justify-content: space-around;
+}
+.first-weather p{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.second-weather img{
+   background: rgb(64, 125, 153);
+   border-radius: 5px;
+   margin-top: 10px;
+}
+.second-weather p{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+.error h3{
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.forcastDays h2{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    top: 1rem;
+    padding-bottom: 5px;
+  }
+.eachforecast{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.cards{
+    background: rgb(98, 98, 163);
+    width: 220px;
+    align-items: center;
+    padding-bottom: 2px;
+    margin: 10px;
+    color: #fff;
+}
+.cards p{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.cards label{
+    font-size: 1.2rem;
+    margin-left: 10px; 
+    margin-top: 10px;
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+}
+.cards img{
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    float: right;
+    
+}
+.descrip{
+ margin-top: 10px;   
+}
+@media screen and (width:500px) {
+     
+    .subcontainer{
+        position: relative;
+        top: 2rem;
+        width: 350px;
+        left: 50%;
+        transform: translate(-50%);  
+    }
+    
+    input{
+        width: 15rem;
+        font-size: 1.3rem;
+    }
+    .btn-submit{
+        width: 15rem;
+        font-size: 1.3rem;
+    }
+    .btn-location{
+        width: 15rem;
+        font-size: 1.3rem;
+    }
+    .container{
+        position: relative;
+        align-items: center;
+        top: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .weather-container{
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        /* background-color: #bbb7b7;  */
+        align-items: center;
+    }
+    .sub-weather{
+        display: flex;
+        justify-content: space-between;
+    }
+    .first-weather p{
+        font-size: 1.1rem;
+        margin-left: 0px;
+    }
+    .second-weather p{
+        font-size: 1.2rem;
+        margin-right: 0px;  
+    }
+    .second-weather img{
+        background: rgb(64, 125, 153);
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 70px;
+    }
+    .eachforecast{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cards p{
+        font-size: 1.2rem;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .cards label{
+        font-size: 1.2rem;
+        margin-left: 10px; 
+        margin-top: 10px;
+        position: relative;
+        top: 1rem;
+        bottom: 1rem;
+    }
+    .btn-icon{
+        position: relative;
+        top: 1rem;
+        border-color: transparent;
+        background: transparent;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .logo{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-style: italic;
+        font-size: 1.1rem;
+    }
+}
