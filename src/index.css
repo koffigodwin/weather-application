@@ -1,39 +1,28 @@
-body{
-    width: 100vw;
+html{
+    width: 100%;
     height: 100%;
-    background-image: url('../images/weather4.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: visible;
-}
-.dark-mood{
-    width: 100vw;
-    height: 100%;
-    background: url('../images/weather1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: visible;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+body{
+    background-color: #ccc7c7;
 }
-.btn-icon{
+
+/* .navbar{
     position: relative;
-    top: 1.2rem;
-    border-color: transparent;
-    background: transparent;
-    color: #fff;
-    font-size: 1.5rem;
-}
+    background-color: #bbb7b7;
+    top: 0rem;
+    width: 100%;
+    height: 3rem;
+} */
 .logo{
-    color: #fff;
+    color: rgb(98, 98, 163);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-style: italic;
     font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+    top: 1rem;
 }
 .container{
     position: relative;
@@ -49,7 +38,7 @@ body{
 }
 .paragraph{
     text-align: center;
-    color: #fff;
+    color: #0c0c0c;
     font-size: 2rem;
     margin-bottom: 8px;
 }
@@ -57,14 +46,14 @@ input{
     position: relative;
     width: 20rem;
     height: 50px;
-    margin-left: 50%;
+    left: 50%;
     transform: translate(-50%);
     margin-bottom: 15px;
     padding-left: 15px;
     border-color: transparent;
     border-radius: 10px;
     font-size: 1.5rem;
-    color: #fdfafa;
+    color: #0c0c0c;
     background: #bbb7b7;
     border: none;
     cursor: pointer;
@@ -74,7 +63,7 @@ input{
     position: relative;
     width: 20rem;
     height: 50px;
-    margin-left: 50%;
+    left: 50%;
     transform: translate(-50%);
     margin-bottom: 15px;
     padding-left: 15px;
@@ -82,19 +71,19 @@ input{
     border-radius: 10px;
     font-size: 1.5rem; 
     background: rgb(98, 98, 163);
-    color: #fff;
+    color: #0c0c0c;
 }
 .or-container{
     text-align: center;
     margin: 5px;
     font-size: 1.3rem;
-    color: #fff;
+    color: #0c0c0c;
 }
 .btn-location{
     position: relative;
     width: 20rem;
     height: 50px;
-    margin-left: 50%;
+    left: 50%;
     transform: translate(-50%);
     margin-bottom: 15px;
     padding-left: 15px;
@@ -102,7 +91,7 @@ input{
     border-radius: 10px;
     font-size: 1.5rem; 
     background: rgb(64, 125, 153);
-    color: #fff;
+    color: #0c0c0c;
 }
 
 
@@ -112,11 +101,11 @@ input{
     background-color: transparent;
     width: 800px;
     margin-right: 20px;
-    color: #fff; 
+    color: #0c0c0c; 
 }
 .weather-container h1{
     text-align: center;
-    color: #fff;
+    color: #080808;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -150,7 +139,7 @@ input{
 .forcastDays h2{
     text-align: center;
     position: relative;
-    color: #fff;
+    color: #0c0c0c;
     top: 1rem;
     padding-bottom: 5px;
   }
@@ -161,12 +150,12 @@ input{
 }
 
 .cards{
-    background: rgb(98, 98, 163);
+    background: rgb(134, 134, 151);
     width: 220px;
     align-items: center;
     padding-bottom: 2px;
     margin: 10px;
-    color: #fff;
+    color: #0c0c0c;
 }
 .cards p{
     font-size: 1.2rem;
@@ -191,7 +180,7 @@ input{
 .descrip{
  margin-top: 10px;   
 }
-@media screen and (width:500px) {
+@media screen and (max-width:700px) {
      
     .subcontainer{
         position: relative;
@@ -199,6 +188,9 @@ input{
         width: 350px;
         left: 50%;
         transform: translate(-50%);  
+    }
+    .paragraph{
+        font-size: 1.1rem;
     }
     
     input{
@@ -263,19 +255,15 @@ input{
         top: 1rem;
         bottom: 1rem;
     }
-    .btn-icon{
-        position: relative;
-        top: 1rem;
-        border-color: transparent;
-        background: transparent;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .logo{
-        color: #fff;
+
+    .logo h3{
+        color: rgb(98, 98, 163);
         text-transform: uppercase;
         letter-spacing: 1px;
         font-style: italic;
+        font-size: 1.1rem;
+    }
+    .weather-container h1{
         font-size: 1.1rem;
     }
 }

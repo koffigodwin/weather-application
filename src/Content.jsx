@@ -5,15 +5,7 @@ const Approvider = createContext();
 const Content = ({children}) => {
     const [inputvalue , setinputvalue] = useState('')
     const [checked , setchecked] = useState(true)
-    const [isdarkmod , setisdarkmood] = useState(false)
      
-    const toogletheme = () =>{
-      const newisdarkmood = !isdarkmod
-      setisdarkmood(newisdarkmood);
-      const toogles = document.querySelector('body');
-      toogles.classList.toggle('dark-mood',newisdarkmood);
-    
-    }
 
     
     const location  = () =>{
@@ -30,7 +22,7 @@ const Content = ({children}) => {
       })
     }
   return (
-    <Approvider.Provider value={{inputvalue , setinputvalue , checked , setchecked , location ,toogletheme , isdarkmod }}>
+    <Approvider.Provider value={{inputvalue , setinputvalue , checked , setchecked , location }}>
         { children }
     </Approvider.Provider>
   )

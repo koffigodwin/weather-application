@@ -16,7 +16,7 @@ const WeatherDetails = () => {
     const [image , setImage] = useState('')
  
 
-    const Url = 'http://api.openweathermap.org/geo/1.0/direct?q='; 
+    const Url = 'https://api.openweathermap.org/geo/1.0/direct?q='; 
     const { isPending , error , data} = useQuery({
       queryKey : ['brocode',inputvalue],
       queryFn : async () => {
